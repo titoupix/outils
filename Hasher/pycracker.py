@@ -278,6 +278,8 @@ Example:
 		else:
 			print("try: python %s -h" % argv[0])
 	except IndexError:
+	print('\033[33m' + "[" + '\033[37m' + "1" + '\033[33m' + "]")
+	
 		choix = input("1. Generate a dictionary\n2. Crack a password\n3. Crack a password using a file\n4. Crack a hash using a dictionary file\n: ")
 		if (choix == 1):
 			make_dict(raw_input("Encryption\nmd5, sha1, sha224, sha256, sha384, sha512\n: "))
